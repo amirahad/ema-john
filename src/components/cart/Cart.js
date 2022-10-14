@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { clearTheCart } from '../../utilities/fakedb';
 
 export default function Cart(props) {
     const cart = props.cart
@@ -33,6 +34,8 @@ export default function Cart(props) {
     const subTotal = (Number(total) + Number(shipping)).toFixed(2)
 
 
+
+
     return (
         <div>
             <h4>Order Summary</h4>
@@ -40,9 +43,9 @@ export default function Cart(props) {
             <p>Product Price: ${total.toFixed(2)}</p>
             <p>Shipping Charge: ${shipping}</p>
             <p>Total Price: $ {subTotal}</p>
-            <Link to={props.btnPath}>
-                <button className="product-button">{props.btnText}</button>
-            </Link>
+            <br />
+
+            {props.children}
 
         </div>
     )
