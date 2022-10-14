@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import useProducts from "../../hooks/useProducts";
 import { addToDb, getStoredCart } from "../../utilities/fakedb";
 import Cart from "../cart/Cart";
 import Product from "../product/Product";
@@ -73,7 +74,7 @@ export default function Shop() {
           </ul>
         </div>
         <div className="cart-container">
-          <Cart cart={cart} />
+          <Cart cart={cart} btnText="View Your Cart" btnPath="/Review" />
         </div>
       </div>
     </>

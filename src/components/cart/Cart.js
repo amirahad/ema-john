@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 export default function Cart(props) {
     const cart = props.cart
@@ -39,6 +40,10 @@ export default function Cart(props) {
             <p>Product Price: ${total.toFixed(2)}</p>
             <p>Shipping Charge: ${shipping}</p>
             <p>Total Price: $ {subTotal}</p>
+            <Link to={props.btnPath}>
+                <button className="product-button">{props.btnText}</button>
+            </Link>
+
         </div>
     )
 }

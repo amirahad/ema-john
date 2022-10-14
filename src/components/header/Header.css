@@ -1,22 +1,26 @@
-.header{
-    text-align: center;
+.header {
+  text-align: center;
 }
-.header img{
-    height: 80px;
+.header img {
+  height: 80px;
 }
-.header nav{
-    background-color: black;
-    color: white;
-    line-height: 40px;
-    font-size: 20px;
+.header nav {
+  background-color: black;
+  color: white;
+  line-height: 40px;
+  font-size: 20px;
 }
-.header nav a{
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
-    padding: 5px;
+.header nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 5px;
 }
-.header nav a:hover{
-    background-color: gray;
-    color: black;
+.header nav a:hover {
+  background-color: gray;
+  color: black;
+}
+.selected {
+  background-color: gray;
+  color: black;
 }
