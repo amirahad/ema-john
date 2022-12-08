@@ -3,8 +3,10 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Header from './components/header/Header';
 import Inventory from './components/inventory/Inventory';
+import Login from './components/Login/Login';
 import NotFound from './components/NotFound/NotFound';
 import PlaceOrder from './components/PlaceOrder/PlaceOrder';
+import Register from './components/Register/Register';
 import Review from './components/review/Review';
 import Shop from './components/shop/Shop';
 
@@ -30,6 +32,12 @@ function App() {
           </Route>
           <Route path="/placeorder" >
             <PlaceOrder />
+          </Route>
+          <Route path="/login" >
+            <Login />
+          </Route>
+          <Route path="/register" >
+            <Register />
           </Route>
           <Route path='*' >
             <NotFound />

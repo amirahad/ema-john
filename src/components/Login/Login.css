@@ -1,0 +1,34 @@
+.login-from {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-from input {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+.login-from input[type="submit"] {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100px;
+  background-color: goldenrod;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.login-from input[type="submit"]:hover {
+  background-color: #fff;
+  color: #000;
+}
+.login-from a {
+  text-decoration: none;
+  color: goldenrod;
+}
+.login-from a:hover {
+  text-decoration: underline;
+}
