@@ -1,1 +1,1 @@
-visit on: https://ema-john-shop2.netlify.app/
+visit on: https://ema-john-simple-8de3a.web.app/
